@@ -1,0 +1,26 @@
+.portfolioBlock{
+    min-height: 100vh;
+    background-color: cadetblue;
+
+
+}
+.container{
+    width: 80%;
+    height: 100%;
+    border: 2px solid wheat;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.work{
+    border: 2px solid blue;
+    min-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title{
+    background-color: wheat;
+}

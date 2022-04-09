@@ -1,0 +1,28 @@
+.frilance {
+    min-height: 30vh;
+    background-color: #61dafb;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+
+}
+.container{
+    border: 2px solid gray;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+}
+.title{
+    background-color: wheat;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+.spanButton{
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 15px;
+}
