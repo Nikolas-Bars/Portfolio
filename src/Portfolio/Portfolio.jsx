@@ -1,17 +1,29 @@
 import React from 'react';
-import s from './Portfolio.module.css'
+import s from './Portfolio.module.scss'
 import Work from "./Work/work";
-
+import Title from "../components/title/Title"
+import tdlImg from './../assets/image/tdl.jpg'
+import counterImg from './../assets/image/counter.jpg'
 
 
 const Portfolio = () => {
+
+    const counter = {
+       backgroundImage: `url(${counterImg})`
+    }
+
+    const tdl = {
+        backgroundImage: `url(${tdlImg})`
+    }
+
     return (
         <div className={s.portfolioBlock}>
             <div className={s.container}>
-                <h2 className={s.title}>Мои работы</h2>
+                <Title title={"Portfolio"}/>
                 <div className={s.work}>
-                    <Work title={'Lorem ipsum.'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quam.'}/>
-                    <Work title={'Lorem ipsum.'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quam.'}/>
+                    <Work style={counter} title={'Lorem ipshum.'} description={'Lg elit. Possimus, quam.'}/>
+                    <Work style={tdl} title={'Lorem ipsum.'}
+                          description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quam.'}/>
                 </div>
             </div>
         </div>

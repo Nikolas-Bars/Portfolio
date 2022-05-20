@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Skills.module.css'
 import Skill from "./Skill/Skill";
+import Title from "../components/title/Title";
 
 
 const Skills = () => {
@@ -9,7 +10,7 @@ const Skills = () => {
 
 
             <div className={s.container}>
-                <h2 className={s.title}>Skills</h2>
+                <Title title={'skills'} />
 
             <div className={s.skills}>
                 <Skill title={'Lorem ipsum '} description={'Lorem ipsum dolor sit amet, consectetur adipisicing.'}/>
