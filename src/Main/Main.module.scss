@@ -1,0 +1,49 @@
+@import '../components/styles/sass/variables';
+
+.mainBlock {
+  background-color: #1f1f20;
+  height: 100vh;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+      .text1 {
+          width: 300px;
+          font-size: 15px;
+          font-family: $titleFontFamily;
+          color: $textColor;
+      }
+
+    .title {
+      width: 300px;
+        font-size: 48px;
+        font-family: $titleFontFamily;
+        color: $textColor;
+    }
+
+      .text {
+          width: 300px;
+          font-family: $textFontFamily;
+          color: $textColor;
+          font-size: 25px;
+      }
+
+    .photo {
+      width: 300px;
+      height: 400px;
+      background-image: url("../../src/assets/image/DSC_815131.jpg");
+      object-fit: cover
+    }
+  }
+}
+
+
+
+
+

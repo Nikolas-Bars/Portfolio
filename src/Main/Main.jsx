@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Main.module.css'
+import s from './Main.module.scss'
 
 
 const Main = () => {
@@ -9,11 +9,12 @@ const Main = () => {
 
             <div className={s.container}>
 
-                <div className={s.text}><span>Lorem ipsum.</span>
-                    <h1> dolor sit amet.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               <div> <span className={s.text1}>Lorem ipsum.</span>
+                    <h1 className={s.title}> Nikolay Prasolov</h1>
+                    <p className={s.text}>
+                        Front-end developer
                     </p>
-                </div>
+            </div>
 
                 <div className={s.photo}></div>
 

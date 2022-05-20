@@ -9,11 +9,13 @@ import counterImg from './../assets/image/counter.jpg'
 const Portfolio = () => {
 
     const counter = {
-       backgroundImage: `url(${counterImg})`
+       backgroundImage: `url(${counterImg})`,
+
     }
 
     const tdl = {
-        backgroundImage: `url(${tdlImg})`
+        backgroundImage: `url(${tdlImg})`,
+
     }
 
     return (
