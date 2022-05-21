@@ -9,8 +9,10 @@ const Main = () => {
 
             <div className={s.container}>
 
-               <div> <span className={s.text1}>Lorem ipsum.</span>
-                    <h1 className={s.title}> Nikolay Prasolov</h1>
+               <div> <span className={s.text1}>Hi there</span>
+                    <h1 className={s.title}>
+                        <div><span>I am</span></div>
+                        <div><span className={s.spanText}> Nikolay Prasolov</span></div></h1>
                     <p className={s.text}>
                         Front-end developer
                     </p>

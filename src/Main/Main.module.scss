@@ -1,18 +1,13 @@
 @import '../components/styles/sass/variables';
+@import '../components/styles/sass/mixins';
 
 .mainBlock {
   background-color: #1f1f20;
   height: 100vh;
-
+  @include flex(row, center, center, nowrap);
   .container {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-
+    @include container();
+    @include flex(row, space-around, center, wrap);
       .text1 {
           width: 300px;
           font-size: 15px;
@@ -22,9 +17,11 @@
 
     .title {
       width: 300px;
-        font-size: 48px;
+        font-size: 45px;
         font-family: $titleFontFamily;
         color: $textColor;
+        letter-spacing: 5px;
+        line-height: 1.2;
     }
 
       .text {
@@ -42,6 +39,41 @@
     }
   }
 }
+
+
+
+//
+//.greeting {
+//  @include flex($titleFontFamily, 50px, 1.2);
+//  span {
+//    font-size: 16px;
+//
+//    &:nth-child(2) {
+//      @include text($titleFontFamily, 50px, 1.2);
+//      letter-spacing: 5px;
+//      margin: 10px 0;
+//
+//      span {
+//        @include text($titleFontFamily, 50px, 1.2);
+//        letter-spacing: 5px;
+//        position: relative;
+//        z-index: 0;
+//        display: inline-block;
+//
+//        &:before {
+//          content: '';
+//          position: absolute;
+//          width: 100%;
+//          height: 20px;
+//          background-color: $primaryColor;
+//          bottom: 0;
+//          z-index: -1;
+//
+//        }
+//      }
+//    }
+//  }
+//}
 
 
 

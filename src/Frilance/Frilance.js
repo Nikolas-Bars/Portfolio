@@ -1,12 +1,14 @@
 import React from 'react';
-import s from './Frilance.module.css'
+import s from './Frilance.module.scss'
+import button from '../components/title/Button.module.scss'
+import Title from "../components/title/Title";
 
 const Frilance = () => {
     return (
         <div className={s.frilance}>
             <div className={s.container}>
-                <div className={s.title}><h2>Рассматриваю варианты удаленной работы</h2> </div>
-                <span className={s.spanButton}>Нанять меня</span>
+                <Title title={'I Am Available For Freelancer'}/>
+                <span className={`${button.btn} ${s.text}`}>HIRE ME</span>
             </div>
         </div>
     );

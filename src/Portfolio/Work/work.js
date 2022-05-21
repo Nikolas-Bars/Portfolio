@@ -1,11 +1,12 @@
 import React from 'react';
 import s from './work.module.scss'
+import button from '../../components/title/Button.module.scss'
 
 const Work = (props) => {
     return (
         <div className={s.workBlock}>
             <div className={s.imageContainer} style={props.style}>
-                <a className={s.spanButton}>
+                <a className={button.btn}>
                     View
                 </a>
             </div>

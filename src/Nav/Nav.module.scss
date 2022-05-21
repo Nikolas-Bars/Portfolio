@@ -1,0 +1,15 @@
+@import 'src/components/styles/sass/variables.scss';
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    padding: 5px;
+    font-family: $titleFontFamily;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}

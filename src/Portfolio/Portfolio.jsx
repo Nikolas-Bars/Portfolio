@@ -2,19 +2,17 @@ import React from 'react';
 import s from './Portfolio.module.scss'
 import Work from "./Work/work";
 import Title from "../components/title/Title"
-import tdlImg from './../assets/image/tdl.jpg'
-import counterImg from './../assets/image/counter.jpg'
+import logo from './../assets/image/logo.png'
+
 
 
 const Portfolio = () => {
-
     const counter = {
-       backgroundImage: `url(${counterImg})`,
-
+       backgroundImage: `url(${logo})`,
     }
 
     const tdl = {
-        backgroundImage: `url(${tdlImg})`,
+        backgroundImage: `url(${logo})`,
 
     }
 
