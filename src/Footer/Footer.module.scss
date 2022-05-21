@@ -21,13 +21,15 @@
     .container{
         display: flex;
         justify-content: space-between;
-        border: 1px solid;
-        width: 280px;
+        width: 230px;
         padding: 10px;
         .footerElement{
             width: 60px;
             height: 60px;
             background-color: blueviolet;
+        }
+        img {
+            width: 50px;
         }
     }
     h6{
