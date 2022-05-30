@@ -8,7 +8,7 @@ const Frilance = () => {
         <div className={s.frilance}>
             <div className={s.container}>
                 <Title title={'I Am Available For Freelancer'}/>
-                <span className={`${button.btn} ${s.text}`}>HIRE ME</span>
+                <div style={{width: '140px'}}>  <span className={`${button.btn} ${s.text}`}>HIRE ME</span></div>
             </div>
         </div>
     );

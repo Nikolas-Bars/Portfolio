@@ -3,48 +3,124 @@
 
 .mainBlock {
   background-color: #1f1f20;
-  height: 100vh;
+  min-height: 100vh;
+  border: none;
   @include flex(row, center, center, nowrap);
+
   .container {
     @include container();
-    @include flex(row, space-around, center, wrap);
-      .text1 {
-          width: 300px;
-          font-size: 15px;
-          font-family: $titleFontFamily;
-          color: $textColor;
-      }
+    @include flex(row, space-between, center, wrap);
+    position: relative;
+    .intro {
+      width: 450px;
+      font-size: 15px;
+      font-family: $titleFontFamily;
+      color: $textColor;
+      position: relative;
 
-    .title {
-      width: 300px;
-        font-size: 45px;
-        font-family: $titleFontFamily;
-        color: $textColor;
-        letter-spacing: 5px;
-        line-height: 1.2;
+      .head {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 37px;
+        flex-wrap: wrap;
+        .iAm{
+          min-width: 80px;
+
+        }
+        .name {
+          border: none;
+          display: flex;
+          margin-left: 5px;
+          @include flex(row, flex-start, flex-start, nowrap);
+          @include text($textFontFamily, 37px, 1.2);
+          letter-spacing: 1px;
+          max-width: 390px;
+          color: $textColor;
+          top: -6px;
+          outline: none;
+          position: relative;
+          z-index: 0;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 16px;
+            background: $primaryColor;
+            bottom: -1px;
+            z-index: -1;
+            transition: all 0.2s ease-in-out;
+            box-sizing: border-box;
+
+          }
+          @media screen and (max-width: 418px) {
+            &::after {
+              width: 172px;
+            }
+          }
+          @media screen and (max-width: 491px) {
+            margin-left: 0;
+            margin-top: 5px;
+          }
+
+        }
+        @media screen and (max-width: 491px) {
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          margin-left: 0;
+          margin-top: 15px;
+        }
+      }
     }
-
-      .text {
-          width: 300px;
-          font-family: $textFontFamily;
-          color: $textColor;
-          font-size: 25px;
-      }
+    .text {
+      width: 300px;
+      font-family: $textFontFamily;
+      color: $textColor;
+      font-size: 25px;
+    }
 
     .photo {
       width: 300px;
       height: 400px;
       background-image: url("../../src/assets/image/DSC_815131.jpg");
-      object-fit: cover
+      object-fit: cover;
+      span {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -9;
+        height: 110%;
+        width: 104%;
+        border: 5px solid #8fa2b9;
+        transform: scale(1.13) translate(10%, 0px);
+        left: 0;
+        right: 0;
+        margin-left: 8%;
+        margin-top: -8%;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+    }
+    @media screen and (max-width: 938px) {
+      align-items: center;
+      justify-content: center;
     }
   }
+
 }
 
 
 
+
+
+//
+
 //
 //.greeting {
-//  @include flex($titleFontFamily, 50px, 1.2);
+//  @include flex($column, flex-start, flex-start, nowrap);
 //  span {
 //    font-size: 16px;
 //
@@ -74,7 +150,6 @@
 //    }
 //  }
 //}
-
 
 
 

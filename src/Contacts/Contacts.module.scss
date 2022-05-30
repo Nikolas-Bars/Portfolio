@@ -1,7 +1,9 @@
 @import 'src/components/styles/sass/variables';
+@import '../components/title/Button.module';
 
 .contacts{
-    height: 50vh;
+    min-height: 50vh;
+    padding: 20px;
     background-color: $bgColor;
     display: flex;
     justify-content: center;
@@ -13,6 +15,7 @@
         align-items: center;
         flex-direction: column;
         position: relative;
+        padding: 30px;
         .form{
             display: flex;
             flex-direction: column;
@@ -38,6 +41,12 @@
             }
             @media screen and (max-width: 370px){
                 width: 80%;
+            }
+            button[type='submit']{
+                @extend .btn;
+                align-self: center;
+                background-color: transparent;
+                margin-top: 30px;
             }
         }
     }

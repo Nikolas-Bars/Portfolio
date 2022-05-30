@@ -6,9 +6,9 @@ const Work = (props) => {
     return (
         <div className={s.workBlock}>
             <div className={s.imageContainer} style={props.style}>
-                <a className={button.btn}>
+                <div style={{width: '90px'}}><a className={button.btn}>
                     View
-                </a>
+                </a></div>
             </div>
         <div className={s.projectInfo}>
             <h3 className={s.projectTitle}>{props.title}</h3>

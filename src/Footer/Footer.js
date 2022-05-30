@@ -17,7 +17,7 @@ const Footer = () => {
                 <div><img alt={''} src={linkedinImage}/></div>
 
             </div>
-            <h6>©Все права защищены</h6>
+            <h6>©All Rights Reserved.</h6>
         </div>
     );
 };
