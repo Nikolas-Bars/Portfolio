@@ -7,8 +7,8 @@ const Skill = (props) => {
         <div className={s.skill}>
 
             <div className={s.icon}>
-
-            </div>
+           <div className={s.image}><img src={props.image} alt={'image'}/></div>
+        </div>
 
             <h3 className={s.title}>{props.title}</h3>
 

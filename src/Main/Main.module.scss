@@ -5,6 +5,7 @@
   background-color: #1f1f20;
   min-height: 100vh;
   border: none;
+  padding: 30px;
   @include flex(row, center, center, nowrap);
 
   .container {
@@ -17,7 +18,6 @@
       font-family: $titleFontFamily;
       color: $textColor;
       position: relative;
-
       .head {
         display: flex;
         justify-content: flex-start;
@@ -81,6 +81,7 @@
     .photo {
       position: relative;
       z-index: 1;
+      margin-bottom: 20px;
       @media screen and (max-width: 954px) {
         margin-top: 50px;
       }
@@ -89,6 +90,7 @@
         height: 400px;
         background-image: url("../../src/assets/image/DSC_815131.jpg");
         @include bgSettings();
+
         background-position: 80% 0;
         @media screen and (max-width: 600px) {
           height: 360px;
@@ -104,6 +106,7 @@
           left: 15px;
           top: -15px;
           z-index: -1;
+          margin-bottom: 15px;
         }
       }
     }
