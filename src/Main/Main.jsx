@@ -19,7 +19,8 @@ const Main = () => {
                     </p>
             </div>
 
-                <div className={s.photo}><span className={s.photo1}/></div>
+                <div className={s.photo}>
+                    <div className={s.image}/></div>
 
             </div>
 

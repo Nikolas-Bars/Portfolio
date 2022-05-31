@@ -19,25 +19,29 @@
         .form{
             display: flex;
             flex-direction: column;
-            width: 280px;
-            height: 150px;
+            width: 100%;
+            min-height: 150px;
             justify-content: space-between;
             margin: 20px 0;
             align-items: center;
             input{
-                padding: 5px;
+                padding: 5px 15px;
                 width: 100%;
                 background-color: $bgSecondColor;
-                margin-bottom: 1px;
+                margin-bottom: 10px;
                 border: 1px solid #4a4a4a;
                 color: white;
             }
             textarea{
-                height: 50%;
+                height: 150px;
                 width: 100%;
                 background-color: $bgSecondColor;
                 border: 1px solid #4a4a4a;
                 color: white;
+                padding: 5px 15px;
+                @media screen and (max-width: 460px){
+                    height: 80px;
+                }
             }
             @media screen and (max-width: 370px){
                 width: 80%;
@@ -54,7 +58,6 @@
 
 input[type="text"]::-webkit-input-placeholder { color: #ffd595; }
 textarea::-webkit-input-placeholder { color: #ffd595; }
-
 
 
 

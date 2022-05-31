@@ -10,9 +10,9 @@ const Contacts = () => {
                 <Title title={'Contact'} />
 
                 <form className={s.form}>
-                    <input type={"text"} placeholder={'Name'}/>
-                    <input type={"text"} placeholder={'Password'}/>
-                    <textarea placeholder={'Your message'}/>
+                    <input type={"text"} className={s.formArea} placeholder={'Name'}/>
+                    <input type={"text"} className={s.formArea} placeholder={'E-mail'}/>
+                    <textarea placeholder={'Your message'} className={s.messageArea}/>
                     <button type={"submit"}>SEND MESSAGE</button>
                 </form>
 

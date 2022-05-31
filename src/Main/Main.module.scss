@@ -79,26 +79,34 @@
     }
 
     .photo {
-      width: 300px;
-      height: 400px;
-      background-image: url("../../src/assets/image/DSC_815131.jpg");
-      object-fit: cover;
-      span {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: -9;
-        height: 110%;
-        width: 104%;
-        border: 5px solid #8fa2b9;
-        transform: scale(1.13) translate(10%, 0px);
-        left: 0;
-        right: 0;
-        margin-left: 8%;
-        margin-top: -8%;
+      position: relative;
+      z-index: 1;
+      @media screen and (max-width: 954px) {
+        margin-top: 50px;
+      }
+      .image {
+        width: 300px;
+        height: 400px;
+        background-image: url("../../src/assets/image/DSC_815131.jpg");
+        @include bgSettings();
+        background-position: 80% 0;
+        @media screen and (max-width: 600px) {
+          height: 360px;
+          width: 260px;
+          transition: .5s;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          height: 110%;
+          width: 105%;
+          border: 5px solid #8fa2b9;
+          left: 15px;
+          top: -15px;
+          z-index: -1;
+        }
       }
     }
-
     @media screen and (max-width: 750px) {
       padding-top: 20px;
       padding-bottom: 20px;
@@ -109,7 +117,6 @@
       justify-content: center;
     }
   }
-
 }
 
 
